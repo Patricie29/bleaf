@@ -1,25 +1,24 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import logo from '@/../public/logo.png'
+import leafGreenLogo from '@/../public/leafgreen.png'
 import Image from 'next/image';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
 
-
     return (
         <>
-            <nav className="bg-[#96aca3] border-gray-200 w-[100vw] top-0 z-40 sticky">
+            <nav className="bg-[#eef0ef] border-gray-200 w-[100vw] top-0 z-40 absolute">
                 <div className="max-w-screen-2xl flex flex-wrap items-center justify-between md:justify-center mx-auto">
                     <a href='/' className="flex items-center md:hidden">
-                        <Image src={logo} width={100} height={40} className='self-center whitespace-nowrap pb-1 md:pb-0' />
+                        <Image src={leafGreenLogo} width={65} height={17} className='self-center whitespace-nowrap pb-1 md:pb-0' />
                     </a>
                     <button
                         onClick={toggleMobileMenu}
@@ -33,24 +32,24 @@ const Navbar = () => {
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                         </svg>
                     </button>
-                    <div className={`w-full md:flex md:justify-center md:items-center ${isMobileMenuOpen ? 'block' : 'hidden'}`} id="navbar-default">
-                        <ul className="font-medium flex flex-col p-2 md:p-0 mt-4 border border-gray-100 m-5 md:m-0 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 text-center md:items-center">
+                    <div className={`w-full md:flex md:justify-center md:items-center md:my-6 ${isMobileMenuOpen ? 'block' : 'hidden'}`} id="navbar-default">
+                        <ul className="font-medium flex flex-col p-2 md:p-0 mt-4 border border-gray-100 m-5 md:m-0 rounded-lg md:flex-row md:space-x-20 md:mt-0 md:border-0 text-center md:items-center">
                             <li>
-                                <a href="#services" className="block py-2 pl-3 pr-4 text-white font-light rounded md:bg-transparent md:p-0 cursor-pointer" aria-current="page">SERVICES</a>
+                                <a href="#services" className="block py-2 pl-3 pr-4 text-[#035501] font-light rounded md:bg-transparent md:p-0 cursor-pointer" aria-current="page">SERVICES</a>
                             </li>
                             <li>
-                                <a href="#maintenance" className="block py-2 pl-3 pr-4 text-white font-light rounded md:bg-transparent md:p-0 cursor-pointer" aria-current="page">MAINTENANCE</a>
+                                <a href="#maintenance" className="block py-2 pl-3 pr-4 text-[#035501] font-light rounded md:bg-transparent md:p-0 cursor-pointer" aria-current="page">MAINTENANCE</a>
                             </li>
-                            <li className='hidden md:block'>
+                            {/* <li className='hidden md:block'>
                                 <a href="#home" className="flex items-center">
                                     <Image src={logo} width={100} height={40} className='self-center whitespace-nowrap pb-1 md:pb-0' />
                                 </a>
+                            </li> */}
+                            <li>
+                                <a href="#about" className="block py-2 pl-3 pr-4 text-[#035501] font-light rounded md:bg-transparent md:p-0 cursor-pointer" aria-current="page">ABOUT</a>
                             </li>
                             <li>
-                                <a href="#about" className="block py-2 pl-3 pr-4 text-white font-light rounded md:bg-transparent md:p-0 cursor-pointer" aria-current="page">ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="#contact" className="block py-2 pl-3 pr-4 text-white font-light rounded md:bg-transparent md:p-0 cursor-pointer" aria-current="page">CONTACT</a>
+                                <a href="#contact" className="block py-2 pl-3 pr-4 text-[#035501] font-light rounded md:bg-transparent md:p-0 cursor-pointer" aria-current="page">CONTACT</a>
                             </li>
                         </ul>
                     </div>
