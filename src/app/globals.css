@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Cormorant&family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -31,8 +31,17 @@ p {
 h1,
 h3,
 li {
-  /* font-style: italic; */
-  /* font-family: 'Architects Daughter', cursive; */
-  /* font-family: 'Caveat', cursive; */
   font-family: 'Nothing You Could Do', cursive;
+}
+
+
+
+@layer utilities {
+  .nav::after {
+    @apply content-[''] bg-white h-[1px] w-[0%] left-[-10px] -bottom-[3px] rounded-xl absolute duration-300
+  }
+
+  .nav:hover::after {
+    @apply w-[120%]
+  }
 }

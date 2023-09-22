@@ -25,9 +25,7 @@ const Contact = () => {
 
     return <>
         <section className="mb-10 py-8 lg:py-[80px] px-4 mx-auto max-w-screen-md" id="contact">
-
             <h1 className="text-center text-4xl md:text-7xl pb-5 lg:pb-8 tracking-[2px]">Contact us</h1>
-
             <p className="mb-8 lg:mb-10 font-light text-center sm:text-xl">Contact us for more details and get a free quote, or give us a call on <span className="font-bold italic">0272 332 989</span></p>
             <div><Toaster /></div>
 

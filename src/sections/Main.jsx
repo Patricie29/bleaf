@@ -15,12 +15,10 @@ const Main = () => {
                     <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt='img1' src={monstera} width={2000} height={1000} />
 
                     {/* LOGO */}
-                    <div className='absolute top-1/2 left-1/2 md:mt-5 transform -translate-x-1/2 -translate-y-1/2'>
-
-                        <div className='border border-slate-50 mt-[20px] md:mt-8 rounded-full p-[12px] md:p-[40px] bg-secondary-green  border-opacity-20'>
+                    <div className='absolute top-1/2 left-1/2 mt-3 md:mt-5 transform -translate-x-1/2 -translate-y-1/2'>
+                        <div className='border border-slate-50 mt-[20px] md:mt-8 rounded-full p-[12px] md:p-[40px] bg-secondary-green bg-opacity-40 border-opacity-20'>
                             <Image src={logo} className='h-[120px] md:h-[320px] w-[120px] md:w-[320px] object-contain' alt='logo' />
                         </div>
-
                     </div>
 
                 </div>
@@ -35,9 +33,9 @@ const Main = () => {
                 {/* <!-- Item 4 --> */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
                     <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt='img4' src={monstera} width={2000} height={1000} />
-                    {/* LOGO */}
-                    <div className='absolute top-1/2 left-1/2 md:mt-5 transform -translate-x-1/2 -translate-y-1/2'>
 
+                    {/* LOGO */}
+                    <div className='absolute top-1/2 left-1/2 mt-3 md:mt-5 transform -translate-x-1/2 -translate-y-1/2'>
                         <div className='border border-slate-50 mt-[20px] md:mt-8 rounded-full p-[12px] md:p-[40px] bg-secondary-green bg-opacity-40 border-opacity-20'>
                             <Image src={logo} className='h-[120px] md:h-[320px] w-[120px] md:w-[320px] object-contain' alt='logo' />
                         </div>
