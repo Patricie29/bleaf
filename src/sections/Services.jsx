@@ -48,7 +48,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div className="w-[70%]">
-                            <Image src={longTermPlant} className="w-full object-fill" />
+                            <Image src={longTermPlant} alt="long term plant" className="w-full object-fill" />
                         </div>
                     </div>
                 </section>
@@ -69,7 +69,7 @@ const Services = () => {
                     <div className="bg-secondary-green h-5 absolute bottom-8 z-[-10] w-[100vw] left-[50%] transform -translate-x-[50%]" />
                     <div className="w-full md:w-1/2 md:ml-8 relative">
                         {/* Portrait Image for Short Term Plant Rental */}
-                        <Image src={shortTermPlant} alt="shortterm-plant" width={500} height={500} className="top-0 md:relative w-full h-[400px] md:h-[500px] object-contain" />
+                        <Image src={shortTermPlant} alt="short-term-plant" width={500} height={500} className="top-0 md:relative w-full h-[400px] md:h-[500px] object-contain" />
                     </div>
                 </section>
                 {/* INTERIOR DESIGN */}
@@ -84,7 +84,7 @@ const Services = () => {
                     <div className="bg-secondary-green h-5 absolute bottom-16 md:bottom-24 z-[-10] w-[100vw] left-[50%] transform -translate-x-[50%]" />
                     <div className="w-full md:w-1/2 md:mr-8 relative items-center">
                         {/* Portrait Image for Interior Plant Design */}
-                        <Image src={interiorPlant} alt="shortterm-plant" width={500} height={500} className="w-full bottom-8 md:relative h-[400px] md:h-[500px] object-contain" />
+                        <Image src={interiorPlant} alt="design plants" width={500} height={500} className="w-full bottom-8 md:relative h-[400px] md:h-[500px] object-contain" />
                     </div>
                 </section>
             </div>

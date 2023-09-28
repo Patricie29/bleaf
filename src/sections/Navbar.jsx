@@ -16,7 +16,7 @@ const Navbar = () => {
             <nav className="bg-secondary-green border-gray-200 w-[100vw] top-0 z-40 absolute">
                 <div className="max-w-screen-2xl flex flex-wrap items-center justify-between md:justify-center mx-auto">
                     <a href='/' className="flex items-center md:hidden">
-                        <Image src={leafGreenLogo} width={65} height={17} className='self-center whitespace-nowrap pb-1 md:pb-0' />
+                        <Image src={leafGreenLogo} alt='logo' width={65} height={17} className='self-center whitespace-nowrap pb-1 md:pb-0' />
                     </a>
                     <button
                         onClick={toggleMobileMenu}
