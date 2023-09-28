@@ -24,11 +24,11 @@ const Main = () => {
                 </div>
                 {/* <!-- Item 2 --> */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt='img2' src={sofa} width={2000} height={1000} />
+                    <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 lg:-translate-y-[60%] top-1/2 left-1/2" alt='img2' src={sofa} width={2000} height={1000} />
                 </div>
                 {/* <!-- Item 3 --> */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt='img3' src={hangingPlants} width={2000} height={1000} />
+                    <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 lg:-translate-y-[40%] top-1/2 left-1/2" alt='img3' src={hangingPlants} width={2000} height={1000} />
                 </div>
                 {/* <!-- Item 4 --> */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
@@ -43,11 +43,11 @@ const Main = () => {
                 </div>
                 {/* <!-- Item 5 --> */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt='img5' src={sofa} width={2000} height={1000} />
+                    <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 lg:-translate-y-[60%] top-1/2 left-1/2" alt='img5' src={sofa} width={2000} height={1000} />
                 </div>
                 {/* <!-- Item 6 --> */}
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                    <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt='img5' src={hangingPlants} width={2000} height={1000} />
+                    <Image className="absolute block w-full -translate-x-1/2 -translate-y-1/2 lg:-translate-y-[40%] top-1/2 left-1/2" alt='img5' src={hangingPlants} width={2000} height={1000} />
                 </div>
             </div>
             {/* <!-- Slider indicators --> */}
