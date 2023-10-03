@@ -23,27 +23,28 @@ const Services = () => {
                         </p>
 
                     </div>
-                    {/* MAINTANACE */}
+                    {/* MAINTENACE */}
                     <div className="flex flex-col md:flex-row mb-5 md:mb-[50px] md:pt-10 items-center md:gap-20" id="maintenance">
-                        <div className="flex flex-col gap-4 md:gap-9 mb-8 md:mb-0 md:w-[70%]">
+                        {/* <li className="text-2xl md:text-[32px] font-light md:pb-3 list-disc md:list-none">Watering</li> */}
+                        <div className="flex flex-col gap-4 md:gap-9 mb-8 md:mb-0 md:w-[70%] text-center md:text-left">
                             <div>
-                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3">Watering</h3>
+                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3"><span className="md:hidden">-</span> Watering <span className="md:hidden">-</span></h3>
                                 <p className="text-[16px] md:text-[18px]">We&apos;ll keep a close eye on your plants&apos; hydration needs. No wilting or dry spells under our watch!</p>
                             </div>
                             <div className="">
-                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3">Pruning</h3>
+                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3"><span className="md:hidden">-</span> Pruning <span className="md:hidden">-</span></h3>
                                 <p className="text-[16px] md:text-[18px]">Plants need a little haircut now and then. We&apos;ll trim and shape them to maintain their health and appearance.</p>
                             </div>
                             <div>
-                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3">Fertilizing</h3>
+                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3"><span className="md:hidden">-</span> Fertilizing <span className="md:hidden">-</span></h3>
                                 <p className="text-[16px] md:text-[18px]">Just like we need our meals, plants need their nutrients. We&apos;ll make sure they&apos;re well-fed and happy.</p>
                             </div>
                             <div>
-                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3">Pest Control</h3>
+                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3"><span className="md:hidden">-</span> Pest Control <span className="md:hidden">-</span></h3>
                                 <p className="text-[16px] md:text-[18px]"> Unwanted visitors can be a bother. We&apos;ll monitor and manage any pests that might come knocking.</p>
                             </div>
                             <div>
-                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3">Plant Swap</h3>
+                                <h3 className="text-2xl md:text-[32px] font-light md:pb-3"><span className="md:hidden">-</span> Plant Swap <span className="md:hidden">-</span></h3>
                                 <p className="text-[16px] md:text-[18px]">Sometimes, a plant might not be as happy in a spot as we hoped. If that&apos;s the case, we&apos;ll gladly switch it out for one that&apos;s a better fit.</p>
                             </div>
                         </div>
@@ -54,9 +55,9 @@ const Services = () => {
                 </section>
 
                 {/* SHORT TERM */}
-                <section className="flex flex-col md:flex-row-reverse items-center relative mt-10 md:mt-0">
+                <section className="flex flex-col md:flex-row-reverse items-center relative mt-2 md:mt-0">
                     {/* Green line */}
-                    <div className="bg-secondary-green h-5 absolute -top-8 md:top-8 z-[-10] w-[100vw] left-[50%] transform -translate-x-[50%]" />
+                    <div className="bg-secondary-green h-5 absolute -top-20 md:top-8 z-[-10] w-[100vw] left-[50%] transform -translate-x-[50%]" />
                     <div className="w-full md:w-1/2 mb-6 md:mb-0 pl-4">
                         <h3 className="text-2xl md:text-[32px] font-semibold mb-2 md:mb-8">Short Term Plant Rental</h3>
                         <p>
