@@ -31,7 +31,7 @@ const Footer = () => {
                                 <a href="https://www.facebook.com/b.leafQT" target='blank'><CiFacebook /></a>
                             </li>
                             <li className="text-3xl mx-4 inline-block transition-transform hover:-translate-y-[7px]">
-                                <a href="#" target='blank'><AiOutlineInstagram /></a>
+                                <a href="https://www.instagram.com/b.leaf_queenstown/" target='blank'><AiOutlineInstagram /></a>
                             </li>
                         </div>
                     </ul>
