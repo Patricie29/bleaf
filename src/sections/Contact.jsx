@@ -10,17 +10,31 @@ const Contact = () => {
 
 
     const sendEmail = (e) => {
-        e.preventDefault()
-        emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                toast.success('Message Sent Successfully!')
-                form.current.reset()
+        e.preventDefault();
 
-            }, function (error) {
-                console.log('FAILED...', error);
-                toast.error("Message not sent, please try again!")
-            })
+        // Show loading toast while sending the email
+        const loadingToastId = toast.loading('Sending message...');
+
+        emailjs
+            .sendForm(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+                form.current,
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            )
+            .then(
+                function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    // Update the loading toast with a success message
+                    toast.success('Message Sent Successfully!', { id: loadingToastId });
+                    form.current.reset();
+                },
+                function (error) {
+                    console.log('FAILED...', error);
+                    // Update the loading toast with an error message
+                    toast.error('Message not sent, please try again!', { id: loadingToastId });
+                }
+            )
     }
 
     return <>
