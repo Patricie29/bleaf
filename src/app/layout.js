@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'b.leaf - Where nature meets no limits.',
-  description: "We're all about adding that touch of green magic to your special moments and everyday spaces. We'll help you select the perfect plants and pots that match your style and space, whether it's an event, wedding or you just want to light up you office or restaurant.",
+  title: 'b.leaf | Queenstown | Plant Hire & Maintenance',
+  description: "Your green specialist in event & wedding hire, long-term plant rental & maintenance, interior plant design. We are passionate about bringing greenery into your space.",
 }
 
 export default function RootLayout({ children }) {
